@@ -169,7 +169,7 @@ function renderQuizEnd() {
 
 
 
-  // submit inititals button
+  // submit initials button
   initialsEntryBtn.setAttribute("type","submit");
   initialsEntryBtn.classList.add("btn");
   initialsEntryBtn.classList.add("btn-primary");
@@ -178,7 +178,7 @@ function renderQuizEnd() {
   initialsSubmitBtnEl.appendChild(initialsEntryBtn);
 
   initialsBoxLbl.setAttribute("for", initialsBoxElId);
-  initialsBoxLbl.textContent = "Please enter your initials to record your score";
+  initialsBoxLbl.textContent = "Please enter your initials to record your score of " + timerDisplayEl.textContent;
 
   initialsboxEl.setAttribute("type", "text");
   initialsboxEl.setAttribute("placeholder", "enter initials");
