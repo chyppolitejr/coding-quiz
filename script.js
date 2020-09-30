@@ -178,7 +178,7 @@ function renderQuizEnd() {
   initialsSubmitBtnEl.appendChild(initialsEntryBtn);
 
   initialsBoxLbl.setAttribute("for", initialsBoxElId);
-  initialsBoxLbl.textContent = "Please enter your initials to record your score of " + timerDisplayEl.textContent;
+  initialsBoxLbl.textContent = "Please enter your initials to record your score of " + timerDisplayEl.value;
 
   initialsboxEl.setAttribute("type", "text");
   initialsboxEl.setAttribute("placeholder", "enter initials");
