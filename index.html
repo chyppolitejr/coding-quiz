@@ -19,31 +19,27 @@
     />
   </head>
   <body>
-    <!-- header row that contains the timer and view high scores 'link' -->
+    <!-- header row to hold timer and view high scores 'link' -->
     <header>
       <div
-        class="d-flex flex-row justify-content-between"
-        id="view-high-scores"
-      >
-        <div class="p-2 bg-highlight" id="view-high-score">
-          view high scores
+        class="d-flex flex-row justify-content-between">
+        <div class="p-2 bg-highlight text-primary" id="view-high-score">
+          View High Scores
         </div>
-
         <div class="p-2 bg-highlight">
-          <p>timer: <span id="timer-display">0</span></p>
+          <p>time: <span id="timer-display">0</span></p>
         </div>
       </div>
     </header>
-
-    <!-- main content area for questions and answers -->
-    <section class="container w-25 pt-5" id="content-section">
+    <!-- home page content-->
+    <section class="container text-center pt-5 w-25 pt-5" id="homepage-content">
       <div class="row">
         <div class="text-center" id="content">
           <h1>Coding Quiz Challenge</h1>
           <p>
-            Try to answer the following code-related questions within the time
-            limit. Keep in mind that incorrect answers will penalize your time
-            score by 10 seconds.
+            Try to answer the following code-related questions within the
+            allotted time. Keep in mind that incorrect answers will decrement
+            your time score by 15 seconds.
           </p>
         </div>
         <button
@@ -53,9 +49,20 @@
         >
           Start Quiz
         </button>
-      </div>
+      </div>  
     </section>
+<!-- question content -->
+<section class="container text-center" id="question-section">
+    <h6   id="question-text"></h6>
+    <div  id="answer-location"></div>
+    <div  class="container text-center pt-5" id="answer-feedback"></div>
+    <div  class="container text-center pt-5" id="enter-initials-lbl"></div>
+    <div  class="container text-center pt-2" id="enter-initials"></div>
+    <div  class="d-flex h-85 justify-content-center" id="submit-high-score-button"></div>
+    <div  class="container text-center pt-3" id="answered-right"></div>
+    <div  class="container text-center pt-1" id="answered-wrong"></div>
+</section>
 
-    <script src="script.js"></script>
+    <script src="script.js" async defer></script>
   </body>
 </html>
